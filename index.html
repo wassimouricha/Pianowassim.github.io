@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/608f7bac6b.js"></script>
+   
+</head>
+
+<body>
+    <!-- clavier container -->
+             <h2>Piano Wassim</h2>
+    <div class="board">
+        <!-- les 8 boutons blancs -->
+        <div data-key="A"  class="white btn">
+            <h1>A</h1>
+        </div>
+        <!-- les 5 boutons noirs -->
+        <div data-key="Ab"class="black btn"></div>
+        <div data-key="B"  class="white btn">
+            <h1>B</h1>
+        </div>
+        <div data-key="Bb"class="black btn"></div>
+        <div data-key="C"  class="white btn">
+            <h1>C</h1>
+        </div>
+        <div data-key="D"  class="white btn">
+            <h1>D</h1>
+        </div>
+        <div data-key="Db"class="black btn"></div>
+        <div data-key="E"  class="white btn">
+            <h1>E</h1>
+        </div>
+        <div data-key="Eb"class="black btn"></div>
+        <div data-key="F"  class="white btn">
+            <h1>F</h1>
+        </div>
+        <div data-key="G"  class="white btn">
+            <h1>G</h1>
+        </div>
+        <div data-key="Gb"class="black btn"></div>
+        <div data-key="Gb"  class="white btn">
+            <h1>Gb</h1>
+        </div>
+    </div>
+    <!-- les fichiers audio -->
+    <audio src="sounds/A4.mp3" id="A"></audio>
+    <audio src="sounds/Ab4.mp3" id="Ab"></audio>
+    <audio src="sounds/B4.mp3" id="B"></audio>
+    <audio src="sounds/Bb4.mp3" id="Bb"></audio>
+    <audio src="sounds/C4.mp3" id="C"></audio>
+    <audio src="sounds/C5.mp3" id="D"></audio>
+    <audio src="sounds/D4.mp3" id="Db"></audio>
+    <audio src="sounds/D5.mp3" id="E"></audio>
+    <audio src="sounds/Db4.mp3" id="Eb"></audio>
+    <audio src="sounds/Db5.mp3" id="F"></audio>
+    <audio src="sounds/E4.mp3" id="G"></audio>
+    <audio src="sounds/E5.mp3" id="Gb"></audio>
+    <!-- le script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

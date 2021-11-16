@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* le corp de la page */
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:skyblue;
+}
+ h2{
+    position: absolute;
+    top:0;
+}
+.board{
+    display: flex;
+}
+
+/* le container white */
+.white{
+    position: relative;
+    width: 100px;
+    height: 400px;
+    background: #f9eaff;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+/* le titre dans le container white  */
+.white h1{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50% , -10% );
+    user-select: none;
+}
+/* :active permet de cibler un élément lorsque celui-ci est activé par l'utilisateur.
+ Elle permet de fournir un feedback indiquant que l'activation a bien été détectée par le navigateur. Lorsqu'on a une interaction avec un pointeur,
+ il s'agit généralement du moment entre l'appui sur le pointeur et le relâchement de celui-ci. */
+.white:active{
+    box-shadow: -3px  -3px 6px rgba(255, 255, 255, 0.9),  3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.black{
+    width: 60px;
+    height: 200px;
+    background: #000000;
+    margin: 0 -30px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 3px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+.black:active{
+    box-shadow: -3px  -3px 6px rgba(255, 255, 255, 0.9),  3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
